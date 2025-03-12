@@ -4,7 +4,7 @@ const { test, expect} = require('@playwright/test');
 
 test('New Locators', async ({ page }) => {
     
-    const productName = 'Banarsi Saree';
+    const productName = 'Zara Coat 3';
     const products = page.locator(".card-body");
     const email = 'anshika@gmail.com';
 

@@ -7,14 +7,14 @@ module.exports = defineConfig({
   testMatch: '**/*spec.js',
   timeout: 30000,
   retries: 0,
-  reporter: 'html',
+  reporter: [['html'],['list']],
   use: {
-    // baseURL: 'https://demo.playwright.dev',
+    baseURL: 'https://rahulshettyacademy.com/client',
     browserName: 'chromium',
     headless: false,
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors:true,
-    video: 'retain-on-failure',
+    video: 'retain-on-failure', 
     screenshot: 'on',
     trace:   'retain-on-failure'
 },
